@@ -1,7 +1,6 @@
-package com.strangeStuff;
+package com.strangeStuff.items;
 
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -31,13 +30,13 @@ public class ArrowRailgun extends Item {
             return InteractionResultHolder.fail(player.getItemInHand(hand));
         }
 
+        ArrowItem arrowItem = (ArrowItem) arrowsStack.getItem();
         useBattery(player, battery);
         arrowsStack.shrink(1); //waste arrow
         if (world.isClientSide())
             player.playSound(SoundEvents.FIREWORK_ROCKET_LAUNCH, 1.0F, 0.5F);
         else {
             player.getCooldowns().addCooldown(this, RELOAD_TIME);
-            ArrowItem arrowItem = (ArrowItem) arrowsStack.getItem();
             AbstractArrow arrow = arrowItem.createArrow(world, arrowsStack, player);
             arrow.setCritArrow(true);
             arrow.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, ARROW_SPEED, GUN_SPREAD);
