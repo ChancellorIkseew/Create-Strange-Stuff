@@ -1,5 +1,8 @@
 {
   "item.strange_stuff.battery": "Батарея",
   "item.strange_stuff.arrow_railgun": "Стрелотрон",
-  "item.strange_stuff.power_sword": "Силовой меч"
+  "item.strange_stuff.power_sword": "Силовой Меч",
+  "item.strange_stuff.electric_drill": "Электрический Бур",
+  "item.strange_stuff.electric_drill_head": "Буровая Головка Электрического Бура",
+  "enchantment.strange_stuff.bedrock_breaker": "Крушитель Бедрока"
 }

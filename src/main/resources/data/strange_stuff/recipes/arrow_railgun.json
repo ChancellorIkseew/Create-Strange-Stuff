@@ -6,14 +6,14 @@
     "CCCLS",
     "    S"],
   "key": {
+    "N": {"tag": "forge:ingots/netherite"},
     "L": {"item": "minecraft:lever"},
-    "N": {"item": "minecraft:netherite_ingot"},
     "R": {"item": "minecraft:repeater"},
-    "B": {"item": "createaddition:gold_spool"},
-    "C": {"item": "createaddition:capacitor"},
     "E": {"item": "create:electron_tube"},
     "S": {"item": "create:sturdy_sheet"},
-    "P": {"item": "create:precision_mechanism"}
+    "P": {"item": "create:precision_mechanism"},
+    "B": {"item": "createaddition:gold_spool"},
+    "C": {"item": "createaddition:capacitor"}
   },
   "result": {"item": "strange_stuff:arrow_railgun"}
 }

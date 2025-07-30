@@ -18,5 +18,6 @@ public class StrangeStuff {
         //
         ModItems.ITEMS.register(modEventBus);
         ModEntities.ENTITIES.register(modEventBus);
+        ModEnchantments.ENCHANTMENTS.register(modEventBus);
     }
 }

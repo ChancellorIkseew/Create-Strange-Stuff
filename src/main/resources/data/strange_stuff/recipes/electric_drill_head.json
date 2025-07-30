@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DAD",
+    "ANA",
+    "DAD"],
+  "key": {
+    "D": {"tag": "forge:dusts/diamond"},
+    "N": {"item": "minecraft:netherite_pickaxe"},
+    "A": {"item": "create:andesite_alloy"}
+  },
+  "result":{"item": "strange_stuff:electric_drill_head"}
+}

@@ -1,5 +1,8 @@
 {
   "item.strange_stuff.battery": "Battery",
   "item.strange_stuff.arrow_railgun": "Arrow Railgun",
-  "item.strange_stuff.power_sword": "Power Sword"
+  "item.strange_stuff.power_sword": "Power Sword",
+  "item.strange_stuff.electric_drill": "Electric Drill",
+  "item.strange_stuff.electric_drill_head": "Electric Drill Head",
+  "enchantment.strange_stuff.bedrock_breaker": "Bedrock Breaker"
 }

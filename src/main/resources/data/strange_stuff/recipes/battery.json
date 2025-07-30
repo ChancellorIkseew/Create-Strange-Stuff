@@ -3,12 +3,11 @@
   "pattern": [
     "C Z",
     "IRI"],
-  "key":
-  {
+  "key": {
     "C": {"tag": "forge:nuggets/copper"},
     "Z": {"tag": "forge:nuggets/zinc"},
-    "R": {"item": "minecraft:redstone_block"},
-    "I": {"item": "minecraft:iron_ingot"}
+    "I": {"tag": "forge:ingots/iron"},
+    "R": {"item": "minecraft:redstone_block"}
   },
   "result":{"item": "strange_stuff:battery"}
 }

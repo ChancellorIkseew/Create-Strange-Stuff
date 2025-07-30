@@ -1,0 +1,13 @@
+{
+  "animation": {
+    "netherite_head_0": {
+      "rotation": {
+        "0.0": [0, 0, 0, 0],
+        "0.5": [0, 45, 0, 0],
+        "1.0": [0, 0, 0, 0]
+      },
+      "loop": true,
+      "interpolation": "linear"
+    }
+  }
+}

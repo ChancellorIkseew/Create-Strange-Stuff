@@ -10,7 +10,7 @@ public class PowerSword extends SwordItem {
     public PowerSword(Properties properties) {
         super(Tiers.NETHERITE, DAMAGE, RELOAD_TIME, properties.stacksTo(1)
                 .defaultDurability(4096)
-        );
+                .fireResistant());
     }
 
     @Override
