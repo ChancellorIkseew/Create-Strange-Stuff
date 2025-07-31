@@ -35,4 +35,8 @@ public class ElectricDrill extends DiggerItem {
     public final boolean isCorrectToolForDrops(ItemStack stack, BlockState state) { return true; }
     @Override
     public final float getDestroySpeed(ItemStack stack, BlockState state) { return 116.0F; }
+    @Override
+    public final boolean isDamageable(ItemStack stack) { return false; }
+    @Override
+    public final boolean isEnchantable(ItemStack p_41456_) { return true; }
 }
