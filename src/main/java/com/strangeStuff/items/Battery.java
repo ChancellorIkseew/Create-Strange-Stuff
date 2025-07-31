@@ -4,8 +4,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
 public class Battery extends Item {
-    public Battery(Properties properties) {
-        super(properties.defaultDurability(128));
+    public Battery(Properties properties, int durability) {
+        super(properties.defaultDurability(durability));
     }
 
     @Override

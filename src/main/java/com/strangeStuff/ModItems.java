@@ -13,8 +13,10 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, StrangeStuff.MODID);
 
-    public static final RegistryObject<Item> BATTERY_ITEM = ITEMS.register("battery", () -> new Battery(
-            new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+    public static final RegistryObject<Item> BATTERY = ITEMS.register("battery", () -> new Battery(
+            new Item.Properties().tab(CreativeModeTab.TAB_TOOLS), 256));
+    public static final RegistryObject<Item> DOUBLE_BATTERY = ITEMS.register("double_battery", () -> new Battery(
+            new Item.Properties().tab(CreativeModeTab.TAB_TOOLS), 512));
     public static final RegistryObject<Item> ARROW_RAILGUN = ITEMS.register("arrow_railgun", () -> new ArrowRailgun(
             new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<Item> POWER_SWORD = ITEMS.register("power_sword", () -> new PowerSword(

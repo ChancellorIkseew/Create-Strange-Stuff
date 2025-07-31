@@ -16,7 +16,7 @@ public class ArrowRailgun extends Item {
     private static final float ARROW_SPEED = 6.0F;
     private static final float GUN_SPREAD = 0.5F;
     private static final int RELOAD_TIME = 4;
-    private static final int ENERGY_PER_USE = 1;
+    private static final int ENERGY_PER_USE = 2;
 
     public ArrowRailgun(Properties properties) {
         super(properties.stacksTo(1));

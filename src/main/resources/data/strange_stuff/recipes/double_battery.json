@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C Z",
+    "IRI",
+    "IRI"],
+  "key": {
+    "C": {"tag": "forge:nuggets/copper"},
+    "Z": {"tag": "forge:nuggets/zinc"},
+    "I": {"tag": "forge:ingots/iron"},
+    "R": {"item": "minecraft:redstone_block"}
+  },
+  "result":{"item": "strange_stuff:double_battery"}
+}
