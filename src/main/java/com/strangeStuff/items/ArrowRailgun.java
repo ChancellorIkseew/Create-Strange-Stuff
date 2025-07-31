@@ -1,5 +1,6 @@
 package com.strangeStuff.items;
 
+import com.strangeStuff.items.util.EnergyWaster;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -15,6 +16,7 @@ public class ArrowRailgun extends Item {
     private static final float ARROW_SPEED = 6.0F;
     private static final float GUN_SPREAD = 0.5F;
     private static final int RELOAD_TIME = 4;
+    private static final int ENERGY_PER_USE = 1;
 
     public ArrowRailgun(Properties properties) {
         super(properties.stacksTo(1));
@@ -22,7 +24,7 @@ public class ArrowRailgun extends Item {
 
     @Override
     public final @NotNull InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
-        ItemStack battery = findBattery(player);
+        ItemStack battery = EnergyWaster.findBattery(player);
         ItemStack arrowsStack = findArrows(player);
         if (battery.isEmpty() || arrowsStack.isEmpty()) {
             if (world.isClientSide())
@@ -31,7 +33,7 @@ public class ArrowRailgun extends Item {
         }
 
         ArrowItem arrowItem = (ArrowItem) arrowsStack.getItem();
-        useBattery(player, battery);
+        EnergyWaster.useBattery(player, battery, ENERGY_PER_USE);
         arrowsStack.shrink(1); //waste arrow
         if (world.isClientSide())
             player.playSound(SoundEvents.FIREWORK_ROCKET_LAUNCH, 1.0F, 0.5F);
@@ -52,21 +54,5 @@ public class ArrowRailgun extends Item {
                 return stack;
         }
         return ItemStack.EMPTY;
-    }
-
-    private static ItemStack findBattery(@NotNull Player player) {
-        for (ItemStack stack : player.getInventory().items) {
-            if (stack.getItem() instanceof Battery)
-                return stack;
-        }
-        return ItemStack.EMPTY;
-    }
-
-    private static void useBattery(Player player, ItemStack battery) {
-        battery.setDamageValue(battery.getDamageValue() + 1);
-        if (battery.getDamageValue() < battery.getMaxDamage())
-            return;
-        battery.shrink(1);
-        player.playSound(SoundEvents.ITEM_BREAK, 1.0F, 0.5F);
     }
 }
