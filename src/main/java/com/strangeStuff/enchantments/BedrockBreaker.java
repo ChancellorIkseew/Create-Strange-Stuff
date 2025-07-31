@@ -12,15 +12,4 @@ public class BedrockBreaker extends Enchantment {
     public BedrockBreaker(Rarity rarity) {
         super(rarity, DRILL_CATEGORY, new EquipmentSlot[0]);
     }
-
-
-    @Override
-    public boolean isTreasureOnly() {
-        return true;
-    }
-
-    @Override
-    public boolean isTradeable() {
-        return false;
-    }
 }

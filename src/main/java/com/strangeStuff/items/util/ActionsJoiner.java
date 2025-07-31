@@ -9,9 +9,9 @@ import java.util.stream.Stream;
 import static net.minecraftforge.common.ToolActions.*;
 
 public class ActionsJoiner {
-    public static Set<ToolAction> join(ToolAction... actions) {
+    private static Set<ToolAction> join(ToolAction... actions) {
         return Stream.of(actions).collect(Collectors.toCollection(Sets::newIdentityHashSet));
     }
 
-    public static final Set<ToolAction> DRILL_ACTIONS = ActionsJoiner.join(PICKAXE_DIG, SHOVEL_DIG, AXE_DIG, HOE_DIG);
+    public static final Set<ToolAction> DRILL_ACTIONS = join(PICKAXE_DIG, SHOVEL_DIG, AXE_DIG, HOE_DIG);
 }

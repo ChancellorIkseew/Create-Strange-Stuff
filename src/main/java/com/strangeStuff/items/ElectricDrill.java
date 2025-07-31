@@ -8,6 +8,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import static com.strangeStuff.items.util.ActionsJoiner.DRILL_ACTIONS;
 
 public class ElectricDrill extends DiggerItem {
     private static final float DAMAGE = 14.0F - 5.0F;
@@ -27,7 +28,7 @@ public class ElectricDrill extends DiggerItem {
 
     @Override
     public final boolean canPerformAction(ItemStack stack, net.minecraftforge.common.ToolAction toolAction) {
-        return com.strangeStuff.items.util.ActionsJoiner.DRILL_ACTIONS.contains(toolAction);
+        return DRILL_ACTIONS.contains(toolAction);
     }
 
     @Override
