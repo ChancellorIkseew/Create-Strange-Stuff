@@ -10,8 +10,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class ElectricDrill extends DiggerItem {
-    private static final float DAMAGE = 3.0F - 5.0F;
-    private static final float ATTACK_SPEED = 0.8F - 4.0F;
+    private static final float DAMAGE = 14.0F - 5.0F;
+    private static final float ATTACK_SPEED = 0.6F - 4.0F;
 
     public ElectricDrill(Properties properties) {
         super(DAMAGE, ATTACK_SPEED, Tiers.NETHERITE, BlockTags.MINEABLE_WITH_PICKAXE,
