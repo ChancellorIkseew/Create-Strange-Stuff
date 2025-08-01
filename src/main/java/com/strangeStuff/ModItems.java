@@ -27,4 +27,10 @@ public class ModItems {
     //non-interactive
     public static final RegistryObject<Item> ELECTRIC_DRILL_HEAD = ITEMS.register("electric_drill_head", () -> new Item(
             new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS).fireResistant()));
+    public static final RegistryObject<Item> POWER_GENERATOR = ITEMS.register("power_generator", () -> new Item(
+            new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+    public static final RegistryObject<Item> REDSTONE_CONTROLLER = ITEMS.register("redstone_controller", () -> new Item(
+            new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+    public static final RegistryObject<Item> INCOMPLETE_REDSTONE_CONTROLLER = ITEMS.register("incomplete_redstone_controller", () -> new Item(
+            new Item.Properties().stacksTo(1)));
 }

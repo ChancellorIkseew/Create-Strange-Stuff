@@ -2,17 +2,17 @@
   "type": "create:mechanical_crafting",
   "pattern": [
     " L ",
-    "PBE",
+    "PRB",
     "SMS",
     " H "],
   "key": {
     "L": {"item": "minecraft:lever"},
-    "E": {"item": "create:electron_tube"},
     "P": {"item": "create:propeller"},
     "S": {"item": "create:sturdy_sheet"},
     "M": {"item": "createaddition:electric_motor"},
-    "B": {"item": "strange_stuff:battery"},
-    "H": {"item": "strange_stuff:electric_drill_head"}
+    "B": {"item": "strange_stuff:double_battery"},
+    "H": {"item": "strange_stuff:electric_drill_head"},
+    "R": {"item": "strange_stuff:redstone_controller"}
   },
   "result":{"item": "strange_stuff:electric_drill"}
 }

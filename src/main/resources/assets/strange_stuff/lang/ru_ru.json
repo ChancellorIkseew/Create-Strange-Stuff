@@ -5,5 +5,8 @@
   "item.strange_stuff.power_sword": "Силовой Меч",
   "item.strange_stuff.electric_drill": "Электрический Бур",
   "item.strange_stuff.electric_drill_head": "Буровая Головка Электрического Бура",
+  "item.strange_stuff.power_generator": "Генератор Силового Поля",
+  "item.strange_stuff.redstone_controller": "Редстоуновый Контроллер",
+  "item.strange_stuff.incomplete_redstone_controller": "Незаконченный Редстоуновый Конроллер",
   "enchantment.strange_stuff.bedrock_breaker": "Крушитель Бедрока"
 }

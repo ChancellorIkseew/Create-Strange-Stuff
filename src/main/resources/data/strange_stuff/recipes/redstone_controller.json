@@ -1,0 +1,62 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {"item": "create:sturdy_sheet"},
+  "transitionalItem": {"item": "strange_stuff:incomplete_redstone_controller"},
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {"item": "strange_stuff:incomplete_redstone_controller"},
+        {"item": "minecraft:comparator"}
+      ],
+      "results": [{"item": "strange_stuff:incomplete_redstone_controller"}]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {"item": "strange_stuff:incomplete_redstone_controller"},
+        {"item": "minecraft:repeater"}
+      ],
+      "results": [{"item": "strange_stuff:incomplete_redstone_controller"}]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {"item": "strange_stuff:incomplete_redstone_controller"},
+        {"item": "minecraft:comparator"}
+      ],
+      "results": [{"item": "strange_stuff:incomplete_redstone_controller"}]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {"item": "strange_stuff:incomplete_redstone_controller"},
+        {"item": "createaddition:capacitor"}
+      ],
+      "results": [{"item": "strange_stuff:incomplete_redstone_controller"}]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {"item": "strange_stuff:incomplete_redstone_controller"},
+        {"tag": "forge:plates/gold"}
+      ],
+      "results": [{"item": "strange_stuff:incomplete_redstone_controller"}]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {"item": "strange_stuff:incomplete_redstone_controller"},
+        {"item": "create:sturdy_sheet"}
+      ],
+      "results": [{"item": "strange_stuff:incomplete_redstone_controller"}]
+    }
+  ],
+  "results": [
+    {
+      "item": "strange_stuff:redstone_controller",
+      "chance": 100.0
+    }
+  ],
+  "loops": 4
+}

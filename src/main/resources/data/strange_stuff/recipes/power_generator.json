@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RBC",
+    "BSB",
+    "CBC"],
+  "key": {
+    "S": {"item": "minecraft:nether_star"},
+    "B": {"item": "createaddition:gold_spool"},
+    "C": {"item": "createaddition:capacitor"},
+    "R": {"item": "strange_stuff:redstone_controller"}
+  },
+  "result": {"item": "strange_stuff:power_generator"}
+}

@@ -5,5 +5,8 @@
   "item.strange_stuff.power_sword": "Power Sword",
   "item.strange_stuff.electric_drill": "Electric Drill",
   "item.strange_stuff.electric_drill_head": "Electric Drill Head",
+  "item.strange_stuff.power_generator": "Power Generator",
+  "item.strange_stuff.redstone_controller": "Redstone Controller",
+  "item.strange_stuff.incomplete_redstone_controller": "Incomplete Redstone Controller",
   "enchantment.strange_stuff.bedrock_breaker": "Bedrock Breaker"
 }
