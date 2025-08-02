@@ -34,7 +34,7 @@ public class ElectricDrill extends DiggerItem {
     }
 
     @Override
-    public boolean canAttackBlock(BlockState state, Level level, BlockPos pos, Player player) {
+    public final boolean canAttackBlock(BlockState state, Level level, BlockPos pos, Player player) {
         return !EnergyWaster.findBattery(player).isEmpty();
     }
 
