@@ -1,7 +1,7 @@
 # Create-Strange-Stuff
 Create Strange Stuff - Minecraft-мод, совместимый с "Create". Использует основу Forge.
 ## Новые предметы:
-<img width="1920" alt="items" src="https://github.com/ChancellorIkseew/Create-Strange-Stuff/dev/items.png">
+<img width="876" alt="items" src="https://github.com/ChancellorIkseew/Create-Strange-Stuff/blob/main/dev/items.png">
 Мод добавляет новые инструементы и оружие. Вам может показаться, что предметы слишком сильные в сравнении с
 ванильными, но их высокая эффективность уравновешивает сложными рецептами производства. Новые предметы
 работают от специальных одноразовых батарей, которые игроку нужно держать в инвентаре. Обычная батарея на 256
