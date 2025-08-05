@@ -1,7 +1,7 @@
 # Create-Strange-Stuff
 Create Strange Stuff - Minecraft-мод, совместимый с "Create". Использует основу Forge.
 #### Зависимости:
-Есть нежёсткая зависимость от "Create Crafts and Additions"/"createaddition". В рецептах используетюся предметы
+Есть нежёсткая зависимость от "Create Crafts and Additions"/"createaddition". В рецептах используются предметы
 из этого мода. Изменив рецепты в json-файлах, вы можете убрать зависимость.
 ## Новые предметы:
 <img width="876" alt="items" src="https://github.com/ChancellorIkseew/Create-Strange-Stuff/blob/main/dev/items.png">
